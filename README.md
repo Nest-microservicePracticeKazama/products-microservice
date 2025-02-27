@@ -30,9 +30,28 @@ Este microservicio es responsable de manejar todas las operaciones relacionadas 
 
 ## Configuración de Desarrollo
 
-### 1. Clonar el repositorio
+# Microservicio de Productos
+
+## Pasos Rápidos para Iniciar el Proyecto
+
+````bash
+# 1. Clonar el repositorio
+git clone https://github.com/tu-organizacion/microservicio-productos.git
+cd microservicio-productos
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Crear archivo .env basado en env.template
+cp .env.template .env
+
+# 4. Ejecutar migración de Prisma
+npx prisma migrate dev
+
+# 5. Ejecutar el proyecto en modo desarrollo
+npm run start:dev
 
 ```bash
 git clone https://github.com/tu-organizacion/microservicio-productos.git
 cd microservicio-productos
-```
+````
